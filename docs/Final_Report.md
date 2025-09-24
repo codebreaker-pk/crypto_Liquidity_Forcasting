@@ -1,9 +1,4 @@
 
----
-
-# 5) `reports/FINAL_REPORT.md`
-
-```markdown
 # Final Report — Cryptocurrency Liquidity Prediction
 
 ## Executive Summary
