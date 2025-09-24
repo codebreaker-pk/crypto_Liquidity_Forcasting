@@ -1,9 +1,4 @@
 
----
-
-# 3) `docs/LLD.md` (Low-Level Design)
-
-```markdown
 # Low-Level Design (LLD)
 
 ## Data Structures
