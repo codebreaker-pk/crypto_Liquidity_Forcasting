@@ -71,6 +71,21 @@ crypto_liquidity_project/
 
 ---
 
+## Orchestration (sequence)
+```mermaid
+sequenceDiagram
+  participant NB as Notebooks
+  participant DS as data/processed
+  participant AR as artifacts
+  participant SV as Flask
+  NB->>DS: merged_coin_gecko.csv
+  NB->>DS: engineered_features_lag.csv
+  NB->>AR: results.csv + RidgeCV_logtarget.joblib
+  SV->>AR: Load model
+  SV->>SV: Derive features → predict (expm1)
+  SV-->>User: Liquidity ratio + label
+```
+
 ## ▶️ Run Locally
 
 ### 1) Environment
