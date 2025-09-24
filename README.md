@@ -10,6 +10,9 @@ liquidity_ratio = 24h_volume / mkt_cap
 > Higher ⇒ generally easier execution (tighter spreads, lower slippage).
 
 ---
+![Project Screenshot](ProjectUI/img2.png)
+![Project Screenshot](ProjectUI/img3.png)
+
 
 ## 📦 Repository Structure
 
