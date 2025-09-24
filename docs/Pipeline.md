@@ -34,17 +34,16 @@ crypto_liquidity_project/
     ├── EDA_REPORT.md
     └── FINAL_REPORT.md
 ```
-
 ## Dataflow
 ```mermaid
 flowchart LR
-A[Raw CSVs (data/raw)] --> B[Preprocess & Merge]
-B --> C[Feature Engineering]
-C --> D[Modeling + Selection]
-D --> E[Best Model Export (.joblib)]
-C --> F[Evaluation & Plots]
-E --> G[Flask Inference (app.py)]
-G --> H[UI (templates + static)]
+    A["Raw CSVs (data/raw)"] --> B["Preprocess & Merge"]
+    B --> C["Feature Engineering"]
+    C --> D["Modeling & Selection"]
+    D --> E["Best Model Export (.joblib)"]
+    C --> F["Evaluation & Plots"]
+    E --> G["Flask Inference (app.py)"]
+    G --> H["UI (templates + static)"]
 ```
 
 ## Orchestration (sequence)
