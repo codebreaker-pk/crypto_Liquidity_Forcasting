@@ -21,17 +21,8 @@ Higher → easier execution (lower slippage).
   - Minimal UI (HTML/CSS) → user inputs 6 core fields
   - Backend derives features; model predicts; UI shows label + guidance
 
-## Data Flow (Pipeline)
-```mermaid
-flowchart LR
-A[Raw CSVs] --> B[Preprocess & Merge]
-B --> C[Feature Engineering\n(MAs, lags, returns, logs)]
-C --> D[Train/Test Split]
-D --> E[Model Training & Eval\n(log target)]
-E --> F[Best Model Export\njoblib]
-F --> G[Flask App Inference]
 
-```
+
 ## Non-Functional
 
 - Reproducible notebooks & fixed directory layout
