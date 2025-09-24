@@ -22,6 +22,19 @@ Higher → easier execution (lower slippage).
   - Backend derives features; model predicts; UI shows label + guidance
 
 
+## Data Flow (Pipeline)
+
+```mermaid
+flowchart LR
+    A["Raw CSVs (data/raw)"] --> B["Preprocess & Merge\n(clean + label)"]
+    B --> C["Feature Engineering\n(MAs, lags, returns, logs)"]
+    C --> D["Modeling & Selection\n(log-target)"]
+    D --> E["Export Best Model\n(artifacts/models)"]
+    C --> F["Evaluation & Plots\n(artifacts/metrics)"]
+    E --> G["Flask Inference (app.py)"]
+    G --> H["Web UI\n(templates + static)"]
+```
+
 
 ## Non-Functional
 
